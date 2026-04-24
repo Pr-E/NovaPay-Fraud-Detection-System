@@ -10,7 +10,7 @@ An end-to-end machine learning project designed to detect fraudulent transaction
 Fraud detection is a critical challenge in fintech, where fraudulent transactions are rare but highly impactful. In this project, we built a robust and interpretable fraud detection system for NovaPay that:
 
 - Accurately identifies fraudulent transactions  
-- Handles severe class imbalance (<1% fraud rate)  
+- Handles severe class imbalance (<10% fraud rate)  
 - Provides transparent, audit-ready explanations for each prediction  
 
 ---
@@ -86,17 +86,21 @@ Identified key fraud patterns:
 
 ---
 
-### 5. Explainability
+### 5. Explainability (SHAP)
 
 Implemented SHAP for:
-- Feature importance  
+
+- Global feature importance  
 - Transaction-level explanations  
 
-Built a **Fraud Review Template** including:
-- Prediction  
+Each prediction includes:
+
+- Prediction (Fraud / Legitimate)  
 - Confidence score  
-- Risk drivers  
-- Reason codes  
+- Risk level (Low / Medium / High)  
+- Top risk drivers  
+- Protective factors  
+- Business-friendly **reason codes**
 
 ---
 
@@ -110,6 +114,21 @@ Top Risk Drivers:
 - New account
 - High transaction velocity
 - Suspicious IP/device interaction
+
+---
+
+## 🖥️ Interactive Dashboard (Streamlit)
+
+A user-friendly interface allows stakeholders to:
+
+- Input transaction details  
+- View fraud prediction instantly  
+- See:
+  - Risk level (colour-coded)
+  - Reason codes
+  - Full fraud review summary  
+
+👉 Transforms model output into **actionable insights**
 
 ---
 
@@ -151,23 +170,22 @@ nova-fraud-api/
     - Precision (avoid false alarms)
 - Explainability is critical for:
     - Trust
-    - Compliance
+    - Regulatory Compliance
     - Analyst decision-making
  
 ---
 
 ## 🚀 Future Improvements
 
-- Real-time streaming predictions
-- Threshold optimization for business use
-- Hybrid system (rules + ML)
-- Monitoring model drift over time
+- Real-time streaming fraud detection  
+- Threshold optimisation for business strategies  
+- Hybrid system (rules + ML)  
+- Model monitoring & drift detection  
+- Integration with transaction systems  
 
 ---
 
 ## 👩‍💻 Author
 
-
-Data Scientist | Machine Learning | Fraud Analytics
-
 Priscillia Ejiro
+Data Scientist | Machine Learning | Fraud Analytics
