@@ -167,5 +167,7 @@ nova-fraud-api/
 
 ## 👩‍💻 Author
 
-Priscillia Ejiro
+
 Data Scientist | Machine Learning | Fraud Analytics
+
+Priscillia Ejiro
