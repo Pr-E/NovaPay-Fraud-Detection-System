@@ -1,4 +1,3 @@
-# NovaPay-Fraud-Detection-System
 # 🚀 NovaPay Fraud Detection System
 
 An end-to-end machine learning project designed to detect fraudulent transactions in a highly imbalanced financial dataset, with a strong focus on **performance, interpretability, and real-world usability**.
